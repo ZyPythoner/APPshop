@@ -13,8 +13,8 @@ def getData(funcname):
     underlineIndex = fileName.rfind("_")
     fileName = fileName[underlineIndex:dotIndex]
 
-    with open('./data/data' + fileName + '.yml', 'r', encoding="utf8") as f:
-        data = yaml.full_load(f)
+    with open('./data/data'+fileName+'.yml', 'r', encoding="utf8") as f:
+        data = yaml.load(f, Loader=yaml.FullLoader)
 
     # 1 先将我们获取到的所有数据都存放在一个变量当中
     tmpdata = data[funcname]

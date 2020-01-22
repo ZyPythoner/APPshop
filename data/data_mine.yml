@@ -1,0 +1,13 @@
+test_login_not:
+  test_login_not_1:
+    num: 18812345677
+    pwd: 123456
+    info: "账号不存"
+  test_login_not_2:
+    num: 18812345679
+    pwd: 123456
+    info: "账号不存"
+  test_login_not_3:
+    num: 18812345670
+    pwd: 123456
+    info: "账号不存"
